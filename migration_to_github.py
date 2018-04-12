@@ -30,8 +30,6 @@ def migration_from_check(url,auth):
         return False
 
 def github_repo_check(url, auth):
-    # if url[-1] == '/':
-    #     url=url[:-1]
     r = requests.get(url,auth=auth)
     if 200 <= r.status_code < 300:
         return True
