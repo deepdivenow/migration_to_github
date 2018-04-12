@@ -1,0 +1,21 @@
+[migration_from]
+type=git
+base_url=https://dns.name/url/$REPO.git #$REPO - variable needs for internal usage
+username=USERNAME-REPO-FROM
+password=PASSWORD-REPO-FROM
+
+[github]
+username=GITHUB-USERNAME
+password=GITHUB-PASSWORD
+
+[migration]
+#Repos list
+# You can insert repos in format
+# <repo from> = <github repo>
+# OR
+# <repo from>
+# that means:
+# github repo name = repo from name
+
+github-integration-test=integration-test
+github-integration-test2
