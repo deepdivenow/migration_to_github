@@ -5,6 +5,8 @@ username=USERNAME-REPO-FROM
 password=PASSWORD-REPO-FROM
 
 [github]
+# Use can use token in password field
+# rights: public_repo, repo:status
 username=GITHUB-USERNAME
 password=GITHUB-PASSWORD
 
