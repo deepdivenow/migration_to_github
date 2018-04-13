@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import sys
 import requests
 import configparser
@@ -21,13 +22,6 @@ paiload={
   "vcs_username": config['migration_from']['username'],
   "vcs_password": config['migration_from']['password']
 }
-
-def migration_from_check(url,auth):
-    r = requests.get(url,auth=auth)
-    if 200 <= r.status_code < 300:
-        return True
-    else:
-        return False
 
 def github_repo_check(url, auth):
     r = requests.get(url,auth=auth)
